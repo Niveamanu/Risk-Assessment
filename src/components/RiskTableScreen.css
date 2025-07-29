@@ -1,0 +1,395 @@
+/* Risk Table Screen Styles */
+.risk-table-screen {
+  padding: 24px;
+  max-width: 1400px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.risk-table-screen-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+  padding: 24px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.risk-table-screen-header-left {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.risk-table-screen-back-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: #e9ecef;
+  border: none;
+  border-radius: 6px;
+  color: #495057;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.risk-table-screen-back-btn:hover {
+  background: #dee2e6;
+  color: #212529;
+}
+
+.risk-table-screen-title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: #212529;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.risk-table-screen-title-icon {
+  font-size: 28px;
+}
+
+.risk-table-screen-header-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.risk-table-screen-info {
+  color: #6c757d;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.risk-table-screen-info:hover {
+  color: #495057;
+}
+
+/* Loading State */
+.risk-table-screen-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.risk-table-screen-loading .loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #e9ecef;
+  border-top: 4px solid #007bff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin-bottom: 16px;
+}
+
+.risk-table-screen-loading span {
+  color: #6c757d;
+  font-size: 16px;
+}
+
+/* Error State */
+.risk-table-screen-error {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  background: #f8d7da;
+  border: 1px solid #f5c6cb;
+  border-radius: 8px;
+  color: #721c24;
+  margin-bottom: 24px;
+}
+
+.risk-table-screen-retry-btn {
+  padding: 6px 12px;
+  background: #dc3545;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.risk-table-screen-retry-btn:hover {
+  background: #c82333;
+}
+
+/* Filters */
+.risk-table-screen-filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.risk-table-screen-filters-left {
+  display: flex;
+  gap: 16px;
+}
+
+.risk-table-screen-filters-right {
+  display: flex;
+  align-items: center;
+}
+
+.risk-table-screen-filter {
+  padding: 8px 12px;
+  border: 1px solid #dee2e6;
+  border-radius: 6px;
+  background: white;
+  color: #495057;
+  font-size: 14px;
+  min-width: 120px;
+}
+
+.risk-table-screen-filter:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+/* Table Wrapper */
+.risk-table-screen-table-wrapper {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.risk-table-screen-table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  background: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.risk-table-screen-table-count {
+  font-size: 14px;
+  color: #6c757d;
+  font-weight: 500;
+}
+
+.risk-table-screen-page-size {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.risk-table-screen-page-size label {
+  font-weight: 500;
+}
+
+.risk-table-screen-page-size-select {
+  padding: 4px 8px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  background: white;
+  font-size: 14px;
+  color: #495057;
+  cursor: pointer;
+}
+
+.risk-table-screen-page-size-select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+/* Pagination Styles */
+.risk-table-screen-pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: white;
+  border-top: 1px solid #dee2e6;
+  border-radius: 0 0 12px 12px;
+}
+
+.risk-table-screen-pagination-info {
+  font-size: 14px;
+  color: #6c757d;
+  font-weight: 500;
+}
+
+.risk-table-screen-pagination-controls {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.risk-table-screen-pagination-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 36px;
+  height: 36px;
+  padding: 0 8px;
+  border: 1px solid #dee2e6;
+  background: white;
+  color: #495057;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.risk-table-screen-pagination-btn:hover:not(:disabled) {
+  background: #f8f9fa;
+  border-color: #adb5bd;
+  color: #212529;
+}
+
+.risk-table-screen-pagination-btn.active {
+  background: #007bff;
+  border-color: #007bff;
+  color: white;
+}
+
+.risk-table-screen-pagination-btn.active:hover {
+  background: #0056b3;
+  border-color: #0056b3;
+}
+
+.risk-table-screen-pagination-btn:disabled {
+  background: #f8f9fa;
+  border-color: #e9ecef;
+  color: #adb5bd;
+  cursor: not-allowed;
+}
+
+.risk-table-screen-pagination-btn svg {
+  width: 16px;
+  height: 16px;
+}
+
+.risk-table-screen-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.risk-table-screen-table thead {
+  background: #f8f9fa;
+}
+
+.risk-table-screen-table th {
+  padding: 16px 12px;
+  text-align: left;
+  font-weight: 600;
+  color: #495057;
+  border-bottom: 2px solid #dee2e6;
+  font-size: 14px;
+}
+
+.risk-table-screen-table td {
+  padding: 16px 12px;
+  border-bottom: 1px solid #e9ecef;
+  color: #212529;
+  vertical-align: middle;
+}
+
+.risk-table-screen-table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+.risk-table-screen-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Action Button */
+.risk-table-screen-link {
+  color: #0078d4;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+  border: none;
+}
+.risk-table-screen-link:hover {
+  text-decoration: underline;
+  color: #005fa3;
+}
+
+.risk-table-screen-clear-filters {
+  background: #dc3545;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.risk-table-screen-clear-filters:hover {
+  background: #c82333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .risk-table-screen {
+    padding: 16px;
+  }
+  
+  .risk-table-screen-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 16px;
+  }
+  
+  .risk-table-screen-header-left {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  
+  .risk-table-screen-title {
+    font-size: 20px;
+  }
+  
+  .risk-table-screen-filters {
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .risk-table-screen-table {
+    font-size: 12px;
+  }
+  
+  .risk-table-screen-table th,
+  .risk-table-screen-table td {
+    padding: 12px 8px;
+  }
+}
+
+/* Animation for loading spinner */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+} 

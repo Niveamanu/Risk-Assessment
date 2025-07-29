@@ -1,0 +1,176 @@
+.dashboard-riskcard {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  padding: 32px 32px 18px 32px;
+  min-width: 420px;
+  /* max-width: 600px; */
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.dashboard-riskcard-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.08rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.dashboard-riskcard-title {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 1.08rem;
+  font-weight: 600;
+}
+.dashboard-riskcard-title-icon {
+  font-size: 1.1rem;
+  margin-right: 2px;
+}
+.dashboard-riskcard-info {
+  color: #888;
+  font-size: 1.1rem;
+  margin-left: 6px;
+  cursor: pointer;
+}
+.dashboard-riskcard-actions {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  color: #888;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.dashboard-riskcard-filters {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.dashboard-riskcard-filters-left {
+  display: flex;
+  gap: 14px;
+}
+
+.dashboard-riskcard-filters-right {
+  display: flex;
+  align-items: center;
+}
+.dashboard-riskcard-filter {
+  background: #f7f7fa;
+  border: none;
+  border-radius: 8px;
+  padding: 7px 18px;
+  font-size: 1rem;
+  color: #888;
+  font-weight: 500;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.03);
+  transition: background 0.2s;
+}
+.dashboard-riskcard-filter:focus {
+  background: #ececec;
+}
+.dashboard-riskcard-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  background: #fff;
+  border-radius: 10px;
+}
+.dashboard-riskcard-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  min-width: 420px;
+  background: #fff;
+}
+.dashboard-riskcard-table th, .dashboard-riskcard-table td {
+  padding: 12px 16px;
+  text-align: left;
+  font-size: 15px;
+  color: #181818;
+  border-bottom: 1px solid #f0f0f0;
+}
+.dashboard-riskcard-table th {
+  background: #f7f7fa;
+  color: #888;
+  font-weight: 600;
+  font-size: 14px;
+  border-bottom: 2px solid #f0f0f0;
+}
+.dashboard-riskcard-table tr:last-child td {
+  border-bottom: none;
+}
+.dashboard-riskcard-link {
+  color: #0078d4;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+  border: none;
+}
+.dashboard-riskcard-link:hover {
+  text-decoration: underline;
+  color: #005fa3;
+}
+.dashboard-riskcard-showall {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+  padding: 8px 0;
+}
+.dashboard-riskcard-showall a {
+  color: #0078d4;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.dashboard-riskcard-showall a:hover {
+  text-decoration: underline;
+  color: #005fa3;
+}
+
+.dashboard-riskcard-showall-btn {
+  background: none;
+  border: none;
+  color: #0078d4;
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s;
+  cursor: pointer;
+  padding: 0;
+  font-family: inherit;
+}
+
+.dashboard-riskcard-showall-btn:hover {
+  text-decoration: underline;
+  color: #005fa3;
+}
+
+.dashboard-riskcard-showall-text {
+  color: #888;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.dashboard-riskcard-clear-filters {
+  background: #dc3545;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.dashboard-riskcard-clear-filters:hover {
+  background: #c82333;
+} 

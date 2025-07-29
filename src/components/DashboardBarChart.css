@@ -1,0 +1,163 @@
+.dashboard-barcard {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  padding: 32px 32px 28px 32px;
+  min-width: 420px;
+  max-width: 600px;
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.dashboard-barcard-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.08rem;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+.dashboard-barcard-title {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 1.08rem;
+  font-weight: 600;
+}
+.dashboard-barcard-title-icon {
+  font-size: 1.1rem;
+  margin-right: 2px;
+}
+.dashboard-barcard-info {
+  color: #888;
+  font-size: 1.1rem;
+  margin-left: 6px;
+  cursor: pointer;
+}
+.dashboard-barcard-actions {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  color: #888;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.dashboard-barcard-chart {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  margin-top: 12px;
+}
+.dashboard-barcard-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.dashboard-barcard-label {
+  min-width: 140px;
+  max-width: 140px;
+  color: #888;
+  font-size: 1.08rem;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: help;
+  transition: color 0.2s ease;
+}
+
+.dashboard-barcard-label:hover {
+  color: #666;
+}
+.dashboard-barcard-bar-bg {
+  flex: 1;
+  background: #f7f7fa;
+  border-radius: 8px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.dashboard-barcard-bar {
+  height: 100%;
+  border-radius: 8px;
+  transition: width 0.4s;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 8px;
+  min-width: 30px; /* Ensure minimum width for label visibility */
+}
+
+.dashboard-barcard-bar-label {
+  color: white;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  white-space: nowrap;
+  z-index: 1;
+}
+.dashboard-barcard-xaxis {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  padding-left: 120px;
+}
+.dashboard-barcard-xaxis-tick {
+  color: #bbb;
+  font-size: 0.95rem;
+  min-width: 18px;
+  text-align: center;
+}
+
+/* Loading and Error States */
+.dashboard-barcard-loading,
+.dashboard-barcard-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+  gap: 12px;
+  color: #888;
+  font-size: 1rem;
+}
+
+.dashboard-barcard-loading .loading-spinner {
+  width: 24px;
+  height: 24px;
+  border: 2px solid #f3f3f3;
+  border-top: 2px solid #0078d4;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.dashboard-barcard-error {
+  color: #ef4444;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.dashboard-barcard-retry-btn {
+  background: #0078d4;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.dashboard-barcard-retry-btn:hover {
+  background: #106ebe;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+} 

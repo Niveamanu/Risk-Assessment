@@ -1,0 +1,122 @@
+.assessed-modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.15);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.assessed-modal {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+  width: 400px;
+  max-width: 95vw;
+  padding: 24px 20px 16px 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.assessed-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+.assessed-modal-close {
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: #888;
+  margin-left: 8px;
+}
+
+.assessed-modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 18px;
+}
+
+.assessed-modal-info-row {
+  display: flex;
+  gap: 8px;
+  font-size: 0.98rem;
+  margin-bottom: 2px;
+}
+
+.assessed-modal-label {
+  font-weight: 500;
+  min-width: 140px;
+  color: #888;
+}
+
+.assessed-modal-textarea {
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  padding: 8px;
+  margin-top: 2px;
+  margin-bottom: 8px;
+  outline: none;
+  transition: border 0.2s;
+}
+.assessed-modal-textarea:focus {
+  border: 1.5px solid #b3b3b3;
+}
+
+.assessed-modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.assessed-modal-cancel {
+  background: #f5f5f5;
+  color: #444;
+  border: none;
+  border-radius: 6px;
+  padding: 7px 18px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.assessed-modal-cancel:hover {
+  background: #ececec;
+}
+
+.assessed-modal-approve {
+  background: #2ecc40;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 7px 18px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+.assessed-modal-approve:hover {
+  background: #27ae38;
+}
+
+.assessed-modal-reject {
+  background: #ff4136;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 7px 18px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+.assessed-modal-reject:hover {
+  background: #e12d1c;
+} 
