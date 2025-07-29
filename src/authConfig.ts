@@ -3,9 +3,10 @@ import { Configuration, PopupRequest } from '@azure/msal-browser'
 // MSAL configuration
 export const msalConfig: Configuration = {
   auth: {
-    clientId: 'b7fb9a3b-efe3-418d-8fa8-243487a42530',
-    authority: 'https://login.microsoftonline.com/b8869792-ee44-4a05-a4fb-b6323a34ca35',
-    redirectUri: 'http://localhost:5173',
+    clientId: 'f2a40b16-4c92-4bf9-90ab-88815bb51e64',
+    authority: 'https://login.microsoftonline.com/3b039a3e-0b01-4b1c-955e-1ddc0c11a314',
+   
+    redirectUri: 'https://riskassessment-dev.flourishresearch.com',
   },
   cache: {
     cacheLocation: 'localStorage',
@@ -15,7 +16,7 @@ export const msalConfig: Configuration = {
 
 // Add scopes here for ID token to be used at Microsoft identity platform endpoints.
 export const loginRequest: PopupRequest = {
-  scopes: ['User.Read', 'GroupMember.Read.All', 'api://b7fb9a3b-efe3-418d-8fa8-243487a42530/access_as_user']
+  scopes: ['User.Read', 'GroupMember.Read.All', 'api://f2a40b16-4c92-4bf9-90ab-88815bb51e64/access_as_user']
 }
 
 // Add the endpoints here for Microsoft Graph API services you'd like to use.

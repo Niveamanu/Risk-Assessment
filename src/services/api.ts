@@ -3,7 +3,7 @@ import { tokenStorage } from '../authConfig'
 
 // Create axios instance
 const api: AxiosInstance = axios.create({
-  baseURL: 'http://localhost:8000/api/v1', // Updated to common FastAPI default port
+  baseURL: 'https://riskassessment-dev.flourishresearch.com/api/v1', // Updated to common FastAPI default port
   // timeout: 30000, // Increased timeout to 30 seconds
   headers: {
     'Content-Type': 'application/json',

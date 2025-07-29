@@ -25,7 +25,7 @@ export default function useMsalUser() {
       }
 
       const request = {
-        scopes: ["api://b7fb9a3b-efe3-418d-8fa8-243487a42530/access_as_user", "GroupMember.Read.All"], // Your app's API scope
+        scopes: ["api://f2a40b16-4c92-4bf9-90ab-88815bb51e64/access_as_user", "GroupMember.Read.All"], // Your app's API scope
         account: account,
       };
 

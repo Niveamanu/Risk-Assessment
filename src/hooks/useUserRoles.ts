@@ -48,15 +48,15 @@ export const useUserRoles = (): UserRoles => {
           const groupsData = await graphResponse.json()
           const userGroups = groupsData.value.map((group: any) => group.displayName)
           
-          const isAdmin = userGroups.includes('Flourish_Risk_Assessment_Admin_POC') || userGroups.includes('Flourish_Admin_Group')
-          const isUser = userGroups.includes('Flourish_Risk_Assessment_User_POC') || userGroups.includes('Flourish_User_Group')
+          const isAdmin = userGroups.includes('site_director') || userGroups.includes('Flourish_Admin_Group')
+          const isUser = userGroups.includes('principal_investigator') || userGroups.includes('Flourish_User_Group')
           
           console.log('🔍 User roles determined:', {
             userGroups,
             isAdmin,
             isUser,
-            hasAdminGroup: userGroups.includes('Flourish_Risk_Assessment_Admin_POC') || userGroups.includes('Flourish_Admin_Group'),
-            hasUserGroup: userGroups.includes('Flourish_Risk_Assessment_User_POC') || userGroups.includes('Flourish_User_Group')
+            hasAdminGroup: userGroups.includes('site_director') || userGroups.includes('Flourish_Admin_Group'),
+            hasUserGroup: userGroups.includes('principal_investigator') || userGroups.includes('Flourish_User_Group')
           })
           
           setRoles({
@@ -86,15 +86,15 @@ export const useUserRoles = (): UserRoles => {
               const groupsData = await graphResponse.json()
               const userGroups = groupsData.value.map((group: any) => group.displayName)
               
-              const isAdmin = userGroups.includes('Flourish_Risk_Assessment_Admin_POC') || userGroups.includes('Flourish_Admin_Group')
-              const isUser = userGroups.includes('Flourish_Risk_Assessment_User_POC') || userGroups.includes('Flourish_User_Group')
+              const isAdmin = userGroups.includes('site_director') || userGroups.includes('Flourish_Admin_Group')
+              const isUser = userGroups.includes('principal_investigator') || userGroups.includes('Flourish_User_Group')
               
               console.log('🔍 User roles determined (popup):', {
                 userGroups,
                 isAdmin,
                 isUser,
-                hasAdminGroup: userGroups.includes('Flourish_Risk_Assessment_Admin_POC') || userGroups.includes('Flourish_Admin_Group'),
-                hasUserGroup: userGroups.includes('Flourish_Risk_Assessment_User_POC') || userGroups.includes('Flourish_User_Group')
+                hasAdminGroup: userGroups.includes('site_director') || userGroups.includes('Flourish_Admin_Group'),
+                hasUserGroup: userGroups.includes('principal_investigator') || userGroups.includes('Flourish_User_Group')
               })
               
               setRoles({
