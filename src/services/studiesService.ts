@@ -22,6 +22,7 @@ export interface StudyResponse {
   site_director_email: string | null
   monitoring_schedule: string
   assessment_status: string
+  crcname: string | null
   
   // Legacy fields for backward compatibility (mapped from new structure)
   site_id?: number
