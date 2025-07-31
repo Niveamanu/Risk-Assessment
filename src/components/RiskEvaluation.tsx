@@ -1453,9 +1453,9 @@ Overall Risk Level: ${overallRiskLevel}`;
                                   <FiEdit2 className="riskeval-edit-icon" />
                                 </div>
                                 {/* Debug info */}
-                                <div style={{ fontSize: '10px', color: '#999' }}>
+                                {/* <div style={{ fontSize: '10px', color: '#999' }}>
                                   Debug: value="{row.severity}" (type: {typeof row.severity})
-                                </div>
+                                </div> */}
                               </td>
                               <td>
                                 <div className="riskeval-editable-cell">
@@ -1473,9 +1473,9 @@ Overall Risk Level: ${overallRiskLevel}`;
                                   <FiEdit2 className="riskeval-edit-icon" />
                                 </div>
                                 {/* Debug info */}
-                                <div style={{ fontSize: '10px', color: '#999' }}>
+                                {/* <div style={{ fontSize: '10px', color: '#999' }}>
                                   Debug: value="{row.likelihood}" (type: {typeof row.likelihood})
-                                </div>
+                                </div> */}
                               </td>
                               <td style={{ fontWeight: '600', textAlign: 'center' }}>{score || '-'}</td>
                               <td>
