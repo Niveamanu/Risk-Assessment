@@ -1,12 +1,23 @@
 import { Configuration, PopupRequest } from '@azure/msal-browser'
 
+// Get redirect URI from environment configuration
+const getRedirectUri = () => {
+  // Use the global constant defined in vite.config.ts
+  if (typeof __REDIRECT_URI__ !== 'undefined') {
+    return __REDIRECT_URI__;
+  }
+  
+  // Fallback for development
+  return 'https://riskassessment-dev.flourishresearch.com';
+};
+
 // MSAL configuration
 export const msalConfig: Configuration = {
   auth: {
     clientId: 'f2a40b16-4c92-4bf9-90ab-88815bb51e64',
     authority: 'https://login.microsoftonline.com/3b039a3e-0b01-4b1c-955e-1ddc0c11a314',
    
-    redirectUri: 'https://riskassessment-dev.flourishresearch.com',
+    redirectUri: getRedirectUri(),
   },
   cache: {
     cacheLocation: 'localStorage',

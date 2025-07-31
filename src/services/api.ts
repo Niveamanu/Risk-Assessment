@@ -1,9 +1,20 @@
 import axios, { AxiosInstance, InternalAxiosRequestConfig, AxiosResponse } from 'axios'
 import { tokenStorage } from '../authConfig'
 
+// Get API base URL from environment configuration
+const getApiBaseUrl = () => {
+  // Use the global constant defined in vite.config.ts
+  if (typeof __API_BASE_URL__ !== 'undefined') {
+    return __API_BASE_URL__;
+  }
+  
+  // Fallback for development
+  return 'https://riskassessment-dev.flourishresearch.com/api/v1';
+};
+
 // Create axios instance
 const api: AxiosInstance = axios.create({
-  baseURL: 'https://riskassessment-dev.flourishresearch.com/api/v1', // Updated to common FastAPI default port
+  baseURL: getApiBaseUrl(),
   // timeout: 30000, // Increased timeout to 30 seconds
   headers: {
     'Content-Type': 'application/json',
