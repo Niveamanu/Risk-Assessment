@@ -262,27 +262,28 @@ const StudyList: React.FC = () => {
                     <th>Description</th>
                     <th>Phase</th>
                     <th>Monitoring Schedule</th>
+                    <th>CRC Name</th>
                     <th>Assessment Status</th>
                   </tr>
                 </thead>
                 <tbody>
                   {loading && (
                     <tr>
-                      <td colSpan={8} style={{ textAlign: 'center', padding: '20px' }}>
+                      <td colSpan={9} style={{ textAlign: 'center', padding: '20px' }}>
                         Loading studies...
                       </td>
                     </tr>
                   )}
                   {error && (
                     <tr>
-                      <td colSpan={8} style={{ textAlign: 'center', padding: '20px', color: 'red' }}>
+                      <td colSpan={9} style={{ textAlign: 'center', padding: '20px', color: 'red' }}>
                         {error}
                       </td>
                     </tr>
                   )}
                   {!loading && !error && filteredStudies.length === 0 && (
                     <tr>
-                      <td colSpan={8} style={{ textAlign: 'center', padding: '20px' }}>
+                      <td colSpan={9} style={{ textAlign: 'center', padding: '20px' }}>
                         No studies found
                       </td>
                     </tr>
@@ -302,6 +303,7 @@ const StudyList: React.FC = () => {
                       <td>{highlightSearchTerm(study.description || '', tableSearch)}</td>
                       <td>{highlightSearchTerm(study.phase || '', tableSearch)}</td>
                       <td>{highlightSearchTerm(study.monitoring_schedule || '', tableSearch)}</td>
+                      <td>{highlightSearchTerm(study.crcname || '', tableSearch)}</td>
                       <td>
                         <span className={`assessment-status ${study.assessment_status?.toLowerCase()}`}>
                           {highlightSearchTerm(study.assessment_status || 'Not Started', tableSearch)}
