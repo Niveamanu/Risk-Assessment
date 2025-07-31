@@ -1770,13 +1770,13 @@ Overall Risk Level: ${overallRiskLevel}`;
                   />
                 </div>
                 <div className="riskeval-summary-save-row">
-                  <button 
+                  {/* <button 
                     className="riskeval-save-btn" 
                     type="button"
                     disabled={!canEdit}
                   >
                     {canEdit ? 'Save' : 'View Only Mode'}
-                  </button>
+                  </button> */}
                   <button 
                     className="riskeval-save-btn" 
                     type="button" 

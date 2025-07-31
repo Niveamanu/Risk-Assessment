@@ -382,14 +382,14 @@ const AssessedStudies: React.FC = () => {
                   <div className="assessed-modal-info-row">
                     <span className="assessed-modal-label">Action Date:</span> {formatDate(modalAssessment.assessment_data.approval_data.action_date)}
                   </div>
-                  <div className="assessed-modal-info-row">
+                  {/* <div className="assessed-modal-info-row">
                     <span className="assessed-modal-label">Reason:</span> {modalAssessment.assessment_data.approval_data.reason}
                   </div>
                   {modalAssessment.assessment_data.approval_data.comments && (
                     <div className="assessed-modal-info-row">
                       <span className="assessed-modal-label">Comments:</span> {modalAssessment.assessment_data.approval_data.comments}
                     </div>
-                  )}
+                  )} */}
                 </>
               )}
               
